@@ -62,7 +62,6 @@
 </head>
 <body class="bg-gray-100 text-gray-800 antialiased">
 
-    <!-- Login Page -->
     <div id="login-page" class="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 p-4">
         <div class="relative w-full max-w-md p-8 space-y-6 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20 text-white fade-in">
             <div class="text-center">
@@ -89,7 +88,6 @@
         </div>
     </div>
 
-    <!-- Main Portal Page (Initially Hidden) -->
     <div id="main-portal" class="hidden fade-in">
         <header class="bg-white shadow-md sticky top-0 z-40">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,7 +111,6 @@
         </header>
 
         <main class="container mx-auto p-4 sm:p-6 lg:p-8">
-            <!-- Welcome Section -->
             <section class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg mb-8" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop'); background-size: cover; background-position: center;">
                 <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl">
                     <h2 class="text-3xl font-bold text-gray-800">Welcome back, Demo User!</h2>
@@ -121,33 +118,30 @@
                 </div>
             </section>
             
-            <!-- Departments Section -->
             <section id="departments-section">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6">Academic Departments</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <!-- Department cards will be injected here by JS -->
-                </div>
+                    </div>
             </section>
             
-            <!-- Campus Life & Events Section -->
             <section id="campus-life-section" class="mt-12">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div class="lg:col-span-2">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Campus Life & Facilities</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                             <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4">
+                             <div id="library-card" class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4 cursor-pointer">
                                  <div class="bg-sky-100 text-sky-700 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
                                  <div><h4 class="font-bold text-lg">Central Library</h4><p class="text-gray-600 text-sm mt-1">Vast collection of books, journals, and digital resources.</p></div>
                              </div>
-                            <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4">
+                             <div id="hostel-card" class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4 cursor-pointer">
                                  <div class="bg-emerald-100 text-emerald-700 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div>
                                  <div><h4 class="font-bold text-lg">Hostel Facilities</h4><p class="text-gray-600 text-sm mt-1">Separate, secure, and well-maintained hostels for boys & girls.</p></div>
                              </div>
-                            <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4">
+                             <div id="transport-card" class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4 cursor-pointer">
                                  <div class="bg-amber-100 text-amber-700 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8a1 1 0 001-1zM21 12h-6"/></svg></div>
                                  <div><h4 class="font-bold text-lg">Transport Network</h4><p class="text-gray-600 text-sm mt-1">Fleet of buses connecting major nearby towns and cities.</p></div>
                              </div>
-                            <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4">
+                             <div id="sports-card" class="bg-white p-6 rounded-xl shadow-md card-hover-effect flex items-start space-x-4 cursor-pointer">
                                  <div class="bg-rose-100 text-rose-700 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
                                  <div><h4 class="font-bold text-lg">Sports Complex</h4><p class="text-gray-600 text-sm mt-1">Extensive grounds for cricket, football, and indoor games.</p></div>
                              </div>
@@ -163,14 +157,14 @@
                                  <div><h4 class="font-semibold">National Conference on AI</h4><p class="text-gray-500 text-sm">Dept. of CSE & AI/DS</p></div>
                              </div>
                              <div class="border-t border-gray-200 my-2"></div>
-                            <div class="flex items-center space-x-4">
+                             <div class="flex items-center space-x-4">
                                  <div class="bg-blue-600 text-white font-bold p-3 rounded-lg text-center w-16">
                                      <span class="text-xl leading-none">02</span><span class="text-xs">NOV</span>
                                  </div>
                                  <div><h4 class="font-semibold">Intra-College Hackathon '25</h4><p class="text-gray-500 text-sm">Coding Club Initiative</p></div>
                              </div>
                              <div class="border-t border-gray-200 my-2"></div>
-                            <div class="flex items-center space-x-4">
+                             <div class="flex items-center space-x-4">
                                  <div class="bg-blue-600 text-white font-bold p-3 rounded-lg text-center w-16">
                                      <span class="text-xl leading-none">15</span><span class="text-xs">NOV</span>
                                  </div>
@@ -210,7 +204,6 @@
         </footer>
     </div>
     
-    <!-- Generic Details Modal -->
     <div id="details-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
         <div id="modal-content" class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col modal-content">
             <div class="flex justify-between items-center p-5 border-b">
@@ -218,8 +211,7 @@
                 <button id="modal-close-button" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
             </div>
             <div id="modal-body" class="p-6 overflow-y-auto">
-                <!-- Modal content will be injected here -->
-            </div>
+                </div>
         </div>
     </div>
 
@@ -251,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: "sky",
             details: `
                 <p class="mb-4 text-gray-700">The CSE department offers state-of-the-art facilities and a curriculum designed to produce globally competent software professionals. The department is accredited by the NBA.</p>
-                <img src="https://ksrce.ac.in/admin/images/department/1678255955.jpg" class="w-full h-48 object-cover rounded-lg mb-4" alt="CSE Department">
+                <img src="cse.jpg" class="w-full h-48 object-cover rounded-lg mb-4"  alt="CSE Department">
                 <h4 class="font-bold mb-2">Key Labs:</h4>
                 <ul class="list-disc list-inside text-gray-600 space-y-1">
                     <li>Advanced Java & Open Source Lab</li>
@@ -267,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: "amber",
             details: `
                 <p class="mb-4 text-gray-700">The Department of Mechanical Engineering is one of the pioneering departments of KSRCE. It provides a strong foundation in mechanical sciences and practical skills.</p>
-                <img src="https://ksrce.ac.in/admin/images/department/1678256678.jpg" class="w-full h-48 object-cover rounded-lg mb-4" alt="Mechanical Department">
+                <img src="mech.jpg" class="w-full h-48 object-cover rounded-lg mb-4" alt="Mechanical Department">
                 <h4 class="font-bold mb-2">Key Labs:</h4>
                 <ul class="list-disc list-inside text-gray-600 space-y-1">
                     <li>CAD/CAM Laboratory</li>
@@ -283,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: "emerald",
             details: `
                 <p class="mb-4 text-gray-700">The Department of Civil Engineering is one of the cornerstone departments of KSRCE. It provides a strong foundation in core engineering principles and essential hands-on skills</p>
-                <img src=""civil.jpg" alt="civil Department">
+                <img src="civil.jpg" alt="civil Department" class="w-full h-48 object-cover rounded-lg mb-4">
                 <h4 class="font-bold mb-2">Key Labs:</h4>
                 <ul class="list-disc list-inside text-gray-600 space-y-1">
                     <li>Strength of Materials Lab</li>
@@ -299,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: "rose",
             details: `
                 <p class="mb-4 text-gray-700">The EEE department provides a comprehensive understanding of electrical and electronics principles, with a focus on power systems, control systems, and renewable energy.</p>
-                <img src="https://ksrce.ac.in/admin/images/department/1678256330.jpg" class="w-full h-48 object-cover rounded-lg mb-4" alt="EEE Department">
+                <img src="ece.jpg" class="w-full h-48 object-cover rounded-lg mb-4" alt="EEE Department">
                 <h4 class="font-bold mb-2">Key Labs:</h4>
                 <ul class="list-disc list-inside text-gray-600 space-y-1">
                     <li>Power Electronics & Drives Lab</li>
@@ -344,6 +336,74 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `
     };
+
+    const campusFacilities = {
+        library: {
+            title: "Central Library",
+            details: `
+                <p class="mb-4 text-gray-700">The Central Library at KSRCE is a vast reservoir of knowledge, spanning over <strong>2,790 sq.m.</strong> It is fully automated with modern RFID technology to facilitate efficient circulation and resource management.</p>
+                <img src="library.jpg" class="w-full h-56 object-cover rounded-lg mb-4" alt="Central Library Interior">
+                <h4 class="font-bold mb-2 text-lg">Key Features:</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Extensive Collection:</strong> Over 88,382 volumes and 33,758 titles covering all fields of engineering and science.</li>
+                    <li><strong>Journals & Periodicals:</strong> Subscriptions to 159 National and 58 International print journals.</li>
+                    <li><strong>Digital Access:</strong> E-journal access through prestigious platforms like IEEE, ASME, ASCE, and DELNET.</li>
+                    <li><strong>Seating Capacity:</strong> A spacious reading hall that accommodates up to 300 students at a time.</li>
+                    <li><strong>Digital Library:</strong> A dedicated section with 30 computer systems for accessing online resources and databases.</li>
+                    <li><strong>Additional Services:</strong> Reprography (photocopying) and book binding facilities are available for students and staff.</li>
+                </ul>
+            `
+        },
+        hostel: {
+            title: "Hostel Facilities",
+            details: `
+                <p class="mb-4 text-gray-700">KSRCE provides a home away from home with its secure, comfortable, and well-maintained hostel facilities, separately for boys and girls, located within the campus.</p>
+                <img src="hostel.jpg" class="w-full h-56 object-cover rounded-lg mb-4" alt="College Hostel Building">
+                <h4 class="font-bold mb-2 text-lg">Amenities & Services:</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Capacity:</strong> Accommodation for over 1500 boys and 600 girls.</li>
+                    <li><strong>Dining:</strong> A modern, hygienic mess serving a variety of nutritious food.</li>
+                    <li><strong>Health & Wellness:</strong> 24/7 medical facility with a resident doctor and an on-campus ambulance service. A well-equipped gym is also available.</li>
+                    <li><strong>Connectivity:</strong> High-speed Wi-Fi connectivity and STD/ISD communication facilities.</li>
+                    <li><strong>Utilities:</strong> Uninterrupted power supply with backup generators and access to RO purified drinking water.</li>
+                    <li><strong>Security:</strong> Round-the-clock security ensures a safe and secure environment for all residents.</li>
+                </ul>
+            `
+        },
+        transport: {
+            title: "Transport Network",
+            details: `
+                <p class="mb-4 text-gray-700">The college operates an extensive transport network to ensure safe and convenient travel for students and staff from various parts of the region.</p>
+                <img src="trans.jpg" class="w-full h-56 object-cover rounded-lg mb-4" alt="College Buses">
+                <h4 class="font-bold mb-2 text-lg">Network Highlights:</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Large Fleet:</strong> A fleet of over <strong>60 modern buses</strong> dedicated to transportation.</li>
+                    <li><strong>Wide Coverage:</strong> Buses operate within a radius of <strong>80 KM</strong> from the campus.</li>
+                    <li><strong>Major Routes:</strong> Connects major towns and cities including Erode, Salem, Namakkal, Tiruchengode, Rasipuram, and Sankagiri.</li>
+                    <li><strong>Punctuality & Safety:</strong> The service is managed to ensure punctuality and adherence to the highest safety standards for all commuters.</li>
+                </ul>
+            `
+        },
+        sports: {
+            title: "Sports Complex & Gymnasium",
+            details: `
+                <p class="mb-4 text-gray-700">KSRCE places a strong emphasis on physical fitness and sportsmanship, offering excellent infrastructure for a wide range of sports and recreational activities.</p>
+                <img src="sports.jpg" class="w-full h-56 object-cover rounded-lg mb-4" alt="College Sports Ground">
+                <h4 class="font-bold mb-2 text-lg">Outdoor Facilities:</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>A standard <strong>400-meter athletic track</strong> with a gallery.</li>
+                    <li>Well-maintained grounds for Football, Hockey, and Cricket.</li>
+                    <li>Courts for Basketball, Volleyball, Ball Badminton, Kabaddi, and Tennis.</li>
+                </ul>
+                <h4 class="font-bold my-2 text-lg">Indoor Facilities:</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Indoor stadium for games like Table Tennis, Carrom, and Chess.</li>
+                    <li>A state-of-the-art <strong>multi-station gymnasium</strong> equipped with modern fitness machines.</li>
+                </ul>
+            `
+        }
+    };
+
 
     // --- FUNCTIONS ---
     function showPortal() {
@@ -405,6 +465,21 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
     });
+
+    // Campus Facilities Click Listeners
+    document.getElementById('library-card').addEventListener('click', () => {
+        openModal(campusFacilities.library.title, campusFacilities.library.details);
+    });
+    document.getElementById('hostel-card').addEventListener('click', () => {
+        openModal(campusFacilities.hostel.title, campusFacilities.hostel.details);
+    });
+    document.getElementById('transport-card').addEventListener('click', () => {
+        openModal(campusFacilities.transport.title, campusFacilities.transport.details);
+    });
+    document.getElementById('sports-card').addEventListener('click', () => {
+        openModal(campusFacilities.sports.title, campusFacilities.sports.details);
+    });
+
 
     // --- INITIALIZATION ---
     if (sessionStorage.getItem('isLoggedIn') === 'true') {
